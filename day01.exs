@@ -22,9 +22,6 @@ ans2 =
   data |>
   Enum.map(&(fuel_required_cumulative.(&1))) |> 
   Enum.sum()
-
-# ans2 =
-#   fuel_required_cumulative.(modified_weights)
-
+  
 IO.puts "Part 1: #{ans1}"
 IO.puts "Part 2: #{ans2}"
