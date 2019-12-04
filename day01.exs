@@ -17,7 +17,6 @@ ans1 =
   Enum.map(&(fuel_required.(&1))) |> 
   Enum.sum()
 
-# modified_weights = 
 ans2 =
   data |>
   Enum.map(&(fuel_required_cumulative.(&1))) |> 
