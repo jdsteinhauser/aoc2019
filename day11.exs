@@ -73,3 +73,6 @@ defmodule Computer do
   
   defp process(_, _, _, idx, _, data, _, _), do: {:error, idx, data}
 end
+
+datums = File.read!("day11.txt") |> String.trim() |> String.split(",") |> Enum.map(&String.to_integer/1)
+
